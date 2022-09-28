@@ -1,0 +1,9 @@
+### Composer ###
+composer.phar
+/vendor/
+.vscode/launch.json
+.vscode/launch.json
+*.zip
+*.png
+*.jpg
+public/js/test.js

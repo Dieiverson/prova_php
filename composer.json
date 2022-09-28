@@ -1,0 +1,19 @@
+{
+    "name": "computer/sim-contenda",
+    "description": "Projeto desenvolvido em PHP utiliando padr\u0000o MVC.",
+    "authors": [{
+        "name": "Dieiverson",
+        "email": "dieiverson@computerroom.com.br"
+    }],
+    "require": {
+        "twig/twig": "3.3.3",
+        "coffeecode/router": "1.0.8"
+    },
+
+    "autoload": {
+        "psr-4": {},
+        "files": [
+            "source/Config.php"
+        ]
+    }
+}
