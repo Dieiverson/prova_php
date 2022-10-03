@@ -94,8 +94,12 @@
                     return false;                
             }
             catch(\Exception $ex)
-            {            
-                throw new Exception("Exceção ao excluir aeroporto. Detalhes: " . $ex->getMessage());              
+            {      
+                if($ex->getCode() == 23000)      
+                    throw new Exception("Erro ao excluir aeroporto: Há aviões ou companhias aéreas vinculadas a esse aeroporto. Exclua-as antes de excluir o aeroporto.");              
+                else
+                    throw new Exception("Exceção ao excluir aeroporto. Detalhes: " . $ex->getMessage());              
+
             }  
         }
 

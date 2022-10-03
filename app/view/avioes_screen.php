@@ -29,7 +29,7 @@
                     <tr>                   
                         <td class="c-table__cell">{{ aviao.marca }}</td>
                         <td class="c-table__cell">{{ aviao.modelo }}</td>
-                        <td class="c-table__cell">{{ aviao.companhia }}</td>
+                        <td class="c-table__cell">{{ aviao.cia }}</td>
                         <td class="c-table__cell"><a href="{{BASE}}/Aviao/Atualizar/{{aviao.id}}">Editar</a></td>                        
                     </tr> 
                 {% endfor %}               

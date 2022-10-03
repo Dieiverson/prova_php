@@ -33,7 +33,7 @@
             <div class="form-group row">
                 <label for="tipo" class="col-4 col-form-label">Companhia</label> 
                 <div class="col-12">
-                    <select name="companhia" id="companhia">
+                    <select class="form-control" name="companhia" id="companhia">
                         {% for cia in cias %}    
                             <option value="{{cia.id}}">{{cia.nome}}</option>
                         {% endfor %}

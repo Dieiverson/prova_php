@@ -33,7 +33,7 @@
             <div class="form-group row">
                 <label for="tipo" class="col-4 col-form-label">Aeroporto</label> 
                 <div class="col-12">
-                    <select name="aeroporto" id="aeroporto">
+                    <select class="form-control" name="aeroporto" id="aeroporto">
                         {% for aeroporto in aeroportos %}    
                             <option value="{{aeroporto.id}}">{{aeroporto.nome}}</option>
                         {% endfor %}

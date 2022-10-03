@@ -97,7 +97,10 @@
             }
             catch(\Exception $ex)
             {            
-                throw new Exception("Exceção ao excluir cia. Detalhes: " . $ex->getMessage());              
+                if($ex->getCode() == 23000)      
+                    throw new Exception("Erro ao excluir companhia aérea: Há aviões vinculados a essa companhia. Exclua-os antes de excluir a companhia.");              
+                else
+                    throw new Exception("Exceção ao excluir companhia aérea. Detalhes: " . $ex->getMessage());             
             }  
         }
 
